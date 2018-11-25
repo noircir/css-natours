@@ -5,7 +5,6 @@
         rgba($color-primary-light, 0.4), 
         rgba($color-primary-dark, 0.4)), 
         url('../img/hero.jpg');
-    // background-image: url('../img/hero.jpg');
     background-size: cover;
     background-position: top;
     position: relative;
@@ -24,14 +23,10 @@
 
     &__text-box {
         position: absolute;
-        //  top and left are in relation to parent element 
         top: 40%;
         left: 50%;
-        // Translate relates to the shape itself: 
-        // move 50% of its own X size to the left, and Y size up.
         transform: translate(-50%, -50%);
         text-align: center;
-        // To stop slight shake at the end of animation 
         backface-visibility: hidden;
     }
 }
