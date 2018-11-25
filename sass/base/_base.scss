@@ -1,0 +1,23 @@
+// Normalization setting
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    // Box-sizing generally will be "border-box" (inherited from 'body')
+    // but sometimes different plugins will use different box sizing, so 
+    // for their sake here we'll write 'inherit'
+    box-sizing: inherit;
+}
+
+html {
+    // Instead of an absolute font size (10px), let's write a percentage 
+    // of the user's default browser size. 62.55 of 16px = 10px.
+
+    // This defines what 1rem is => therefore, it doesn't belong to _typography.scss.
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
